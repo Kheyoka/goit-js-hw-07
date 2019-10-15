@@ -1,0 +1,27 @@
+.container {
+  margin-bottom: 20px;
+}
+.gallery__items {
+  display: flex;
+  list-style: none;
+  margin-left: 10px;
+}
+.gallery__items li img {
+  max-width: 80%;
+}
+
+#name-output {
+  font-size: 30px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
