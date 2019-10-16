@@ -9,8 +9,9 @@ const ingredients = [
   'Приправы',
 ];
 const ingredientsList = document.querySelector('#ingredients');
-ingredients.map(item => {
-  let createlistOfIng = document.createElement('li');
-  createlistOfIng.insertAdjacentHTML('beforeend', item);
+ingredients.reduce((createlistOfIng, item) => {
+  createlistOfIng = document.createElement('li');
+  createlistOfIng + item;
+  createlistOfIng.insertAdjacentHTML('afterbegin', item);
   ingredientsList.appendChild(createlistOfIng);
 });
