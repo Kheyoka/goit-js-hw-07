@@ -19,11 +19,13 @@ const images = [
 ];
 
 const galleryOfImagesList = document.querySelector('#gallery');
-images.map(item => {
+const res = images.map(item => {
   const createListOfImages = document.createElement('li');
   createListOfImages.insertAdjacentHTML(
     'afterbegin',
     `<img src="${item.url}" alt="${item.alt}">`,
   );
-  galleryOfImagesList.appendChild(createListOfImages);
+  return createListOfImages;
 });
+
+galleryOfImagesList.append(...res);
