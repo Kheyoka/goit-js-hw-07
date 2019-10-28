@@ -10,9 +10,11 @@ const counterValuePlus = document.querySelector(
 let counterValue = 0;
 function decrement() {
   counterValue -= 1;
+  counter.innerHTML = counterValue;
 }
 function increment() {
   counterValue += 1;
+  counter.innerHTML = counterValue;
 }
 counterValueMinus.addEventListener('click', decrement);
 counterValuePlus.addEventListener('click', increment);
